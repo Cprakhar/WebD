@@ -12,7 +12,7 @@ export default () => {
                 <div className="navbar-nav ms-auto">
                     <a className="nav-link active" aria-current="page" href="/">Home</a>
                     <Link className="nav-link" to="/treemap">Tree map</Link>
-                    <a className="nav-link" href="/">Contact us</a>
+                    <Link className="nav-link" to="/contact_us">Contact us</Link>
                 </div>
             </div>
         </div>

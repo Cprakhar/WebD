@@ -8,6 +8,7 @@ import Find_me from './components/Find_me';
 import { BrowserRouter as Router, Route, Routes, useParams } from 'react-router-dom';
 import React from 'react';
 import Tree_map from './components/Tree_map';
+import Contact_us from './components/Contact_us';
 
 export default () => {
 
@@ -30,6 +31,7 @@ export default () => {
           <Route path='/cactus' element={<Category api='http://localhost:5000/cactus' title='Cactus plants/trees'/>}></Route>
           <Route path='/medicinal' element={<Category api='http://localhost:5000/medicinal' title='Medicinal plants/trees'/>}></Route>
           <Route path='/:category/:id' element={<Find_me />}></Route>
+          <Route path='/contact_us' element={<Contact_us />}></Route>
           <Route path='/treemap' element={<Tree_map/>}></Route>
           <Route path='/' element={home()} />
         </Routes>
